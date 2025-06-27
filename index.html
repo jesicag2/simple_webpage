@@ -14,13 +14,67 @@
         <h1 class="text-primary text-center mt-5">Welcome!</h1>
     </div>
 
+    <!-- registration form -->
     <div class="container mt-5">
         <h2 class="text-center text-primary">Registration Form</h2>
-        
-        <form>
+
+        <form class="border p-4 shadow-sm bg-light">
+
+            <!-- first/last name row -->
+            <div class="row mb-3">
+                <!-- first name -->
+                <div class="col-md-6">
+                    <label for="fname" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="fname" required>
+                    <div class="invalid-feedback">
+                        Please enter your first name.
+                    </div>
+                </div>
+                
+                <!-- last name -->
+                <div class="col-md-6">
+                    <label for="lname" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lname" required>
+                    <div class="invalid-feedback">
+                        Please enter your last name.
+                    </div>
+                </div>
+            </div>
+            
+            <!-- email -->
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" required>
+                <div class="invalid-feedback">
+                    Please enter your email.
+                </div>
+            </div>
+            
+            <!-- password -->
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" required>
+                <div class="invalid-feedback">
+                    Please enter your email.
+                </div>
+            </div>
+
+            <!-- checkbox terms -->
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="terms" required>
+                <label class="form-check-label">I agree to the terms and conditions.</label>
+                <div class="invalid-feedback">
+                    You must agree before submitting.
+                </div>
+            </div>
+
+            <!-- button -->
+             <button type="submit" class="btn btn-success w-100">Register</button>
 
         </form>
     </div>
+
+    
 
 
 </body>
